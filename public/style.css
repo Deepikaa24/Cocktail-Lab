@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f16);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.navbar h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.navbar span {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Glass Card */
+.glass-card {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 40px rgba(255, 120, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Image */
+.image-area {
+  flex: 1;
+}
+
+.image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Details */
+.details {
+  flex: 1.2;
+  padding: 2.5rem;
+}
+
+.drink-name {
+  font-size: 2.4rem;
+  color: #ffb703;
+}
+
+.tagline {
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+/* Info sections */
+.info {
+  margin-bottom: 1.5rem;
+}
+
+.info h3 {
+  color: #fb8500;
+  margin-bottom: 0.5rem;
+}
+
+.info ul {
+  padding-left: 1.2rem;
+}
+
+.info li {
+  margin-bottom: 0.3rem;
+}
+
+.info p {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Button */
+.random-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #ff7a18, #ffb703);
+  color: #111;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.random-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 183, 3, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .glass-card {
+    flex-direction: column;
+  }
+
+  .image-area img {
+    height: 280px;
+  }
+}

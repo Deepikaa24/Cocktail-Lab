@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cocktail Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>🍸 Cocktail Lab</h1>
+    <span>Discover • Mix • Enjoy</span>
+  </nav>
+
+  <main class="wrapper">
+
+    <div class="glass-card">
+
+      <div class="image-area">
+        <img
+          src=<%= img %>
+          alt="Cocktail"
+        />
+      </div>
+
+      <div class="details">
+
+        <h2 class="drink-name"><%= name %></h2>
+        <p class="tagline"><%= cat%> in a <%= glass %></p>
+
+        <div class="info">
+          <h3>Ingredients</h3>
+          <%for(let i=0;i<ingd.length;i++){%>
+          <ul>
+            <li><%= ingd[i] %></li>
+          </ul>
+        <%}%>
+        </div>
+
+        <div class="info">
+          <h3>Instructions</h3>
+          <p>
+            <%=ins%>
+          </p>
+        </div>
+        <form action="/random" method="POST">
+        <button class="random-btn">
+          🍹 Generate Random Cocktail
+        </button>
+       </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    Designed for Cocktail Lovers
+  </footer>
+
+</body>
+</html>
